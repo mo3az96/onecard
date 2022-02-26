@@ -680,6 +680,8 @@ main {
 .product .img-here {
   width: 100%;
   position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .product .product-img {
