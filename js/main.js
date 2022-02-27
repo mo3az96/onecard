@@ -1,3 +1,8 @@
+$(window).on("load", function () {
+  $(".progress-bar").fadeOut("300", function () {
+    $(this).remove();
+  });
+});
 $(document).ready(function () {
   /***** tooltip *****/
   $('[data-toggle="tooltip"]').tooltip();

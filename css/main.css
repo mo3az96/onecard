@@ -2298,6 +2298,110 @@ html[dir="ltr"] .lang-select ~ .select2-container .select2-selection--single .se
   opacity: 1;
 }
 
+.progress-bar {
+  background-color: var(--secondery-color);
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  height: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.progress-bar span {
+  display: block;
+}
+
+.progress-bar .bar {
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.progress-bar .progress {
+  -webkit-animation: loader 5s ease infinite;
+          animation: loader 5s ease infinite;
+  background: -webkit-gradient(linear, right top, left top, from(var(--primary-color)), to(var(--secondery-color)));
+  background: linear-gradient(to left, var(--primary-color), var(--secondery-color));
+  border: none;
+  padding: 0px;
+  width: 0;
+  height: 5px;
+  border-radius: 0;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  25% {
+    width: 24%;
+  }
+  43% {
+    width: 41%;
+  }
+  56% {
+    width: 50%;
+  }
+  66% {
+    width: 52%;
+  }
+  71% {
+    width: 60%;
+  }
+  75% {
+    width: 76%;
+  }
+  94% {
+    width: 86%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loader {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  25% {
+    width: 24%;
+  }
+  43% {
+    width: 41%;
+  }
+  56% {
+    width: 50%;
+  }
+  66% {
+    width: 52%;
+  }
+  71% {
+    width: 60%;
+  }
+  75% {
+    width: 76%;
+  }
+  94% {
+    width: 86%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .section-head {
   margin-bottom: 30px;
 }
