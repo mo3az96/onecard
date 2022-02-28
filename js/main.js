@@ -149,4 +149,20 @@ $(document).ready(function () {
     $(".sidenav").removeClass("active");
     $(".menu-btn").removeClass("active");
   });
+  var prevScroll = $(window).scrollTop();
+
+  $(this).scrollTop() >= 250
+    ? $("header").addClass("fixed")
+    : $("header").removeClass("fixed");
+  $(window).scroll(function () {
+    $(this).scrollTop() >= 250
+      ? $("header").addClass("fixed")
+      : $("header").removeClass("fixed");
+
+    var currentScroll = $(window).scrollTop();
+    prevScroll < currentScroll && prevScroll > 0
+      ? $("header").removeClass("fixsedt")
+      : $("header").addClass("fixsedt"),
+      (prevScroll = currentScroll);
+  });
 });
