@@ -2907,6 +2907,12 @@ header.fixed .logo {
   width: 80px;
 }
 
+@media (max-width: 767px) {
+  header.fixed .logo {
+    width: 45px;
+  }
+}
+
 header.fixed .header-list > li > a {
   line-height: 35px;
 }
