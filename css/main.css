@@ -20,14 +20,13 @@ html {
 
 html ::-webkit-scrollbar {
   background-color: #ecedf6;
-  width: 3px;
+  width: 7px;
   height: 3px;
-  -webkit-appearance: none;
 }
 
 html ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
-  width: 3px;
+  width: 7px;
   height: 3px;
 }
 
