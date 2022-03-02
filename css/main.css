@@ -15,17 +15,17 @@ body {
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: var(--primary-color) #ecedf6;
+  scrollbar-color: #000 #ecedf6;
 }
 
 html ::-webkit-scrollbar {
   background-color: #ecedf6;
   width: 3px;
-  height: 3px;
+  height: 9px;
 }
 
 html ::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
+  background-color: #000;
 }
 
 input {
