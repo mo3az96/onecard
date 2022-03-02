@@ -93,6 +93,18 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input::-webk
   }
 }
 
+img {
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming)*/
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
+}
+
 @font-face {
   font-family: 'tajawal';
   src: url("../fonts/TAJAWAL/Tajawal-ExtraLight.woff2") format("woff2"), url("../fonts/TAJAWAL/Tajawal-ExtraLight.woff") format("woff"), url("../fonts/TAJAWAL/Tajawal-ExtraLight.ttf") format("truetype");
@@ -263,6 +275,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input::-webk
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
 }
 
@@ -2846,7 +2860,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 65px;
+  max-width: 56px;
 }
 
 .maarof-vat .vat img {
@@ -2942,7 +2956,7 @@ header.fixed {
 }
 
 header.fixed .header-cont {
-  padding: 10px 0;
+  padding: 10px 0 15px;
 }
 
 @media (max-width: 991px) {
@@ -2952,23 +2966,22 @@ header.fixed .header-cont {
 }
 
 header.fixed .logo {
-  width: 80px;
+  width: 50px;
 }
 
 @media (max-width: 767px) {
   header.fixed .logo {
-    width: 45px;
+    width: 40px;
   }
+}
+
+header.fixed .float-tools {
+  display: none;
 }
 
 header.fixed .header-list > li > a {
-  line-height: 35px;
-}
-
-@media (max-width: 767px) {
-  header.fixed .header-list > li > a {
-    line-height: 35px;
-  }
+  font-size: 14px;
+  line-height: 41px;
 }
 
 header.fixed.fixsedt {
