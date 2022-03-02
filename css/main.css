@@ -1013,6 +1013,7 @@ main {
   cursor: pointer;
   -webkit-margin-start: 11px;
           margin-inline-start: 11px;
+  padding: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
