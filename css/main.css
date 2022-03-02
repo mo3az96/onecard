@@ -15,17 +15,20 @@ body {
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #000 #ecedf6;
+  scrollbar-color: var(--primary-color) #ecedf6;
 }
 
 html ::-webkit-scrollbar {
   background-color: #ecedf6;
-  width: 8px;
-  height: 9px;
+  width: 3px;
+  height: 3px;
+  -webkit-appearance: none;
 }
 
 html ::-webkit-scrollbar-thumb {
-  background-color: #000;
+  background-color: var(--primary-color);
+  width: 3px;
+  height: 3px;
 }
 
 input {
