@@ -1844,9 +1844,6 @@ html[dir="ltr"] .lang-select ~ .select2-container .select2-selection--single .se
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1864,6 +1861,17 @@ html[dir="ltr"] .lang-select ~ .select2-container .select2-selection--single .se
 }
 
 .sidenav .sidenav-body .cats-list > li > a i {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 22.5px;
   font-size: 10px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;

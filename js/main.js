@@ -127,14 +127,16 @@ $(document).ready(function () {
     $(this).toggleClass("active").siblings("ul").slideToggle();
   });
 
-  $(".has-sub>a").click(function () {
-    $(".has-sub>a").not(this).removeClass("active");
-    if ($(this).siblings("ul").css("display") == "none") {
-      $(this).addClass("active").siblings("ul").slideDown(500);
+  $(".has-sub>a>i").click(function (e) {
+    e.preventDefault();
+    var thisParent = $(this).parent("a");
+    $(".has-sub>a").not(thisParent).removeClass("active");
+    if (thisParent.siblings("ul").css("display") == "none") {
+      thisParent.addClass("active").siblings("ul").slideDown(500);
     } else {
-      $(this).removeClass("active").siblings("ul").slideUp(500);
+      thisParent.removeClass("active").siblings("ul").slideUp(500);
     }
-    $(".has-sub>a").not(this).siblings("ul").slideUp(500);
+    $(".has-sub>a").not(thisParent).siblings("ul").slideUp(500);
   });
 
   $(".menu-btn").click(function () {
