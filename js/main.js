@@ -153,13 +153,13 @@ $(document).ready(function () {
   });
   var prevScroll = $(window).scrollTop();
 
-  $(this).scrollTop() >= 250
+  $(this).scrollTop() >= 750
     ? $("header").addClass("fixed")
-    : $("header").removeClass("fixed");
+    : $("header").removeClass("fixed fixsedt");
   $(window).scroll(function () {
-    $(this).scrollTop() >= 250
+    $(this).scrollTop() >= 750
       ? $("header").addClass("fixed")
-      : $("header").removeClass("fixed");
+      : $("header").removeClass("fixed fixsedt");
 
     var currentScroll = $(window).scrollTop();
     prevScroll < currentScroll && prevScroll > 0
