@@ -153,11 +153,11 @@ $(document).ready(function () {
   });
   var prevScroll = $(window).scrollTop();
 
-  $(this).scrollTop() >= 750
+  $(this).scrollTop() >= 250
     ? $("header").addClass("fixed")
     : $("header").removeClass("fixed fixsedt");
   $(window).scroll(function () {
-    $(this).scrollTop() >= 750
+    $(this).scrollTop() >= 250
       ? $("header").addClass("fixed")
       : $("header").removeClass("fixed fixsedt");
 
@@ -166,5 +166,21 @@ $(document).ready(function () {
       ? $("header").removeClass("fixsedt")
       : $("header").addClass("fixsedt"),
       (prevScroll = currentScroll);
+  });
+
+  var height = $(".page-p").prop("scrollHeight");
+  console.log(height);
+  if (height > 57) {
+    $(".page-p").siblings(".show-more-cont").show();
+  }
+  $(".show-more").click(function (e) {
+    var text = $(this).parents(".head-summary").find(".page-p");
+    var height = text.prop("scrollHeight");
+    $(this).toggleClass("active");
+    if ($(this).hasClass("active")) {
+      text.height(height).css("display", "block");
+    } else {
+      text.height(56).css("display", "-webkit-box");
+    }
   });
 });
