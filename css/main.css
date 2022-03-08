@@ -1926,6 +1926,10 @@ html[dir="ltr"] .lang-select ~ .select2-container .select2-selection--single .se
 
 .HowToUse .modal-dialog {
   width: 360px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .HowToUse .modal-content {
