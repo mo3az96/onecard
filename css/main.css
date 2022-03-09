@@ -3189,6 +3189,9 @@ header {
   .product-page {
     border: none;
   }
+  .product-page .page-popup {
+    margin-bottom: 30px;
+  }
 }
 
 .product-main-img {
