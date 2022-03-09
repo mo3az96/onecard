@@ -426,53 +426,319 @@
     <!-- Start Page Content -->
     <section class="page-content">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="product-main-img">
-              <div class="product-img">
-                <img src="./images/products/main.jpg" class="img-fluid" />
+        <div class="product-page">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="product-main-img">
+                <div class="product-img">
+                  <img src="./images/products/main.jpg" class="img-fluid" />
+                </div>
+                <button
+                  class="addToFav"
+                  data-toggle="tooltip"
+                  title="اضف إلى المفضلة"
+                >
+                  <i class="lar la-heart"></i>
+                </button>
               </div>
-              <button
-                class="addToFav"
-                data-toggle="tooltip"
-                title="اضف إلى المفضلة"
-              >
-                <i class="lar la-heart"></i>
-              </button>
             </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="product-main-description">
-              <h1 class="page-title product-main-name">
-                بطاقة بلايستيشن ستور سعودي 100 دولار
-              </h1>
-              <a href="subCategory.html" class="product-main-category">
-                بلايستيشن سعودي
-              </a>
-              <div class="product-main-prices">
-                <strong class="price"> 70.00 ريال </strong>
-                <del class="old-price"> 75.00 ريال </del>
-                <span class="hint">
-                  <i class="las la-check-circle"></i>
-                  وفرت 5 ريال
-                </span>
-              </div>
-              <div class="head-summary">
-                <p class="page-p">
-                  بلايستيشن هي علامة تجارية لسلسلة من أنظمة ألعاب الفيديو تم
-                  إنشاؤها وتطويرها من قبل شركة سوني أنتركتف إنترتينمنت. وتتكون
-                  العلامة التجارية من مجموعه ثلاثة وحدات ألعاب منزلية، مركز
-                  وسائل إعلام، خدمات على الإنترنت، خط من وحدات تحكم، واثنين من
-                  الأجهزة المحمولة وهاتف، فضلا عن مجلات متعددة
-                </p>
-                <div class="show-more-cont">
-                  <a role="button" class="show-more">
-                    <span class="more"> اقرأ المزيد </span>
-                    <span class="less"> اغلاق </span>
-                  </a>
+            <div class="col-lg-8">
+              <div class="product-main-description">
+                <h1 class="page-title product-main-name">
+                  بطاقة بلايستيشن ستور سعودي 100 دولار
+                </h1>
+                <a href="subCategory.html" class="product-main-category">
+                  بلايستيشن سعودي
+                </a>
+                <div class="product-main-prices">
+                  <strong class="price"> 70.00 ريال </strong>
+                  <del class="old-price"> 75.00 ريال </del>
+                  <div class="hint-cont">
+                    <span class="hint">
+                      <i class="las la-check-circle"></i>
+                      وفرت 5 ريال
+                    </span>
+                  </div>
+                </div>
+                <div class="product-main-summary">
+                  <p class="product-main-p">
+                    بلايستيشن هي علامة تجارية لسلسلة من أنظمة ألعاب الفيديو تم
+                    إنشاؤها وتطويرها من قبل شركة سوني أنتركتف إنترتينمنت. وتتكون
+                    العلامة التجارية من مجموعه ثلاثة وحدات ألعاب منزلية، مركز
+                    وسائل إعلام، خدمات على الإنترنت، خط من وحدات تحكم، واثنين من
+                    الأجهزة المحمولة وهاتف، فضلا عن مجلات متعددة
+                  </p>
+                  <div class="show-more-cont">
+                    <a role="button" class="show-more">
+                      <span class="more"> اقرأ المزيد </span>
+                      <span class="less"> اغلاق </span>
+                    </a>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="page-popup secondary-btn"
+                  data-toggle="modal"
+                  data-target="#HowToUse"
+                >
+                  <i class="las la-question-circle"></i>
+                  طريقة الإستخدام
+                </button>
+                <div class="product-main-tools">
+                  <div class="quantity">
+                    <strong> الكمية </strong>
+                    <select class="quantity-select">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                    </select>
+                  </div>
+                  <div class="product-main-btns">
+                    <button class="buy">
+                      <i class="las la-shopping-cart"></i>
+                      شراء سريع
+                    </button>
+                    <button class="add-to-cart">
+                      <i class="las la-cart-plus"></i>
+                      <span> اضف إلى السلة </span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="suggested-products">
+          <div class="products-head">
+            <h2 class="products-title">الناس يشترون أيضا</h2>
+          </div>
+          <div class="products-slider products-slider-0">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="img-here">
+                      <a href="productDetails.html" class="product-img">
+                        <img src="./images/products/03.jpg" />
+                      </a>
+                      <button
+                        class="add-to-fav"
+                        data-toggle="tooltip"
+                        title="اضف إلى المفضلة"
+                      >
+                        <i class="lar la-heart"></i>
+                      </button>
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">
+                        <a href="productDetails.html">
+                          ريزر جولد - 100 دولار (المتجر اﻷمريكي)
+                        </a>
+                      </div>
+                      <a href="subCategory.html" class="product-category"
+                        >فري فاير</a
+                      >
+                      <div class="product-prices">
+                        <strong class="price">70.00 ريال</strong>
+                      </div>
+                    </div>
+                    <div class="product-tools">
+                      <button class="buy">
+                        <i class="las la-shopping-cart"></i>
+                        شراء سريع
+                      </button>
+                      <button
+                        class="add-to-cart"
+                        data-toggle="tooltip"
+                        title="اضف إلى السلة"
+                      >
+                        <i class="las la-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="img-here">
+                      <a href="productDetails.html" class="product-img">
+                        <img src="./images/products/04.jpg" />
+                      </a>
+                      <button
+                        class="add-to-fav active"
+                        data-toggle="tooltip"
+                        title="حذف من المفضلة"
+                      >
+                        <i class="lar la-heart"></i>
+                      </button>
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">
+                        <a href="productDetails.html">
+                          ريزر جولد - 100 دولار (المتجر اﻷمريكي)
+                        </a>
+                      </div>
+                      <a href="subCategory.html" class="product-category"
+                        >فري فاير</a
+                      >
+                      <div class="product-prices">
+                        <strong class="price">70.00 ريال</strong>
+                      </div>
+                    </div>
+                    <div class="product-tools">
+                      <button class="buy">
+                        <i class="las la-shopping-cart"></i>
+                        شراء سريع
+                      </button>
+                      <button
+                        class="add-to-cart"
+                        data-toggle="tooltip"
+                        title="اضف إلى السلة"
+                      >
+                        <i class="las la-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="img-here">
+                      <a href="productDetails.html" class="product-img">
+                        <img src="./images/products/05.jpg" />
+                      </a>
+                      <button
+                        class="add-to-fav"
+                        data-toggle="tooltip"
+                        title="اضف إلى المفضلة"
+                      >
+                        <i class="lar la-heart"></i>
+                      </button>
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">
+                        <a href="productDetails.html">
+                          ريزر جولد - 100 دولار (المتجر اﻷمريكي)
+                        </a>
+                      </div>
+                      <a href="subCategory.html" class="product-category"
+                        >فري فاير</a
+                      >
+                      <div class="product-prices">
+                        <strong class="price">70.00 ريال</strong>
+                      </div>
+                    </div>
+                    <div class="product-tools">
+                      <button class="buy">
+                        <i class="las la-shopping-cart"></i>
+                        شراء سريع
+                      </button>
+                      <button
+                        class="add-to-cart"
+                        data-toggle="tooltip"
+                        title="اضف إلى السلة"
+                      >
+                        <i class="las la-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="img-here">
+                      <a href="productDetails.html" class="product-img">
+                        <img src="./images/products/06.jpg" />
+                      </a>
+                      <button
+                        class="add-to-fav"
+                        data-toggle="tooltip"
+                        title="اضف إلى المفضلة"
+                      >
+                        <i class="lar la-heart"></i>
+                      </button>
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">
+                        <a href="productDetails.html">
+                          ريزر جولد - 100 دولار (المتجر اﻷمريكي)
+                        </a>
+                      </div>
+                      <a href="subCategory.html" class="product-category"
+                        >فري فاير</a
+                      >
+                      <div class="product-prices">
+                        <strong class="price">70.00 ريال</strong>
+                      </div>
+                    </div>
+                    <div class="product-tools">
+                      <button class="buy">
+                        <i class="las la-shopping-cart"></i>
+                        شراء سريع
+                      </button>
+                      <button
+                        class="add-to-cart"
+                        data-toggle="tooltip"
+                        title="اضف إلى السلة"
+                      >
+                        <i class="las la-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="img-here">
+                      <a href="productDetails.html" class="product-img">
+                        <img src="./images/products/07.jpg" />
+                      </a>
+                      <button
+                        class="add-to-fav"
+                        data-toggle="tooltip"
+                        title="اضف إلى المفضلة"
+                      >
+                        <i class="lar la-heart"></i>
+                      </button>
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">
+                        <a href="productDetails.html">
+                          ريزر جولد - 100 دولار (المتجر اﻷمريكي)
+                        </a>
+                      </div>
+                      <a href="subCategory.html" class="product-category"
+                        >فري فاير</a
+                      >
+                      <div class="product-prices">
+                        <strong class="price">70.00 ريال</strong>
+                      </div>
+                    </div>
+                    <div class="product-tools">
+                      <button class="buy">
+                        <i class="las la-shopping-cart"></i>
+                        شراء سريع
+                      </button>
+                      <button
+                        class="add-to-cart"
+                        data-toggle="tooltip"
+                        title="اضف إلى السلة"
+                      >
+                        <i class="las la-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-btn-next swiper-btn">
+              <span class="las la-angle-left"></span>
+            </div>
+            <div class="swiper-btn-prev swiper-btn">
+              <span class="las la-angle-right"></span>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -575,7 +841,31 @@
       </div>
     </footer>
     <!-- End Footer -->
-
+    <div class="modal HowToUse" id="HowToUse" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="las la-times"></i>
+          </button>
+          <div class="steps">
+            <h4 class="steps-title">طريقة الإستخدام</h4>
+            <ol class="steps-list">
+              <li>اختر الفئة التي تريد شراؤها، ثم اضغط على "اشترى الآن".</li>
+              <li>احتفظ ببيانات المنتج (الكود).</li>
+              <li>قم بزيارة موقع بلايستيشن نتوورك ستور.</li>
+              <li>سجل دخولك على حسابك الخاص.</li>
+              <li>اضغط على "Redeem Prepaid Card".</li>
+              <li>ادخل بيانات المنتج (الكود).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
