@@ -1991,6 +1991,175 @@ html[dir="ltr"] .lang-select ~ .select2-container .select2-selection--single .se
   width: 14px;
 }
 
+.form-group {
+  margin: 0 0 18px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondery-color);
+  margin: 0 0 7px;
+  padding: 0 22px;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+
+.form-control {
+  width: 100%;
+  height: 45px;
+  border-radius: 22.5px;
+  border: 2px solid #ecedf6;
+  background-color: #fafbfd;
+  padding: 0 25px;
+  font-size: 14px;
+  color: var(--text-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: #fafbfd;
+}
+
+.input-group {
+  position: relative;
+}
+
+html[dir="rtl"] .input-group .form-control {
+  border-radius: 22.5px;
+}
+
+html[dir="ltr"] .input-group .form-control {
+  border-radius: 22.5px;
+}
+
+.input-group .country-key {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  inset-inline-end: 2px;
+  background-color: #ecedf6;
+  padding: 0 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  color: var(--text-color);
+  z-index: 9;
+}
+
+.input-group .country-key img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-margin-start: 8px;
+          margin-inline-start: 8px;
+}
+
+html[dir="rtl"] .input-group .country-key {
+  border-top-left-radius: 22.5px;
+  border-bottom-left-radius: 22.5px;
+}
+
+html[dir="ltr"] .input-group .country-key {
+  border-top-right-radius: 22.5px;
+  border-bottom-right-radius: 22.5px;
+}
+
+textarea.form-control {
+  height: 100px;
+  resize: none;
+  padding: 15px 25px;
+}
+
+.radios-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  max-width: 400px;
+  gap: 11px 0;
+  -webkit-margin-start: 22px;
+          margin-inline-start: 22px;
+}
+
+.radio label {
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 14px;
+  color: var(--text-color);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.radio label .mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #ecedf6;
+  background-color: #fafbfd;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-margin-end: 7px;
+          margin-inline-end: 7px;
+}
+
+.radio label .mark::after {
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  width: 14px;
+  height: 14px;
+  content: "";
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio label input {
+  display: none;
+}
+
+.radio label input:checked ~ .mark::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.form-submit {
+  width: 345px;
+  max-width: 100%;
+  margin: auto;
+}
+
 .progress-bar {
   background-color: var(--secondery-color);
   border: none;
@@ -3620,6 +3789,29 @@ html[dir="ltr"] .product-main-tools .quantity-select {
     -webkit-box-shadow: 3.536px 3.536px 10px 0px rgba(9, 82, 126, 0.1);
             box-shadow: 3.536px 3.536px 10px 0px rgba(9, 82, 126, 0.1);
   }
+}
+
+.contact-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 15px;
+}
+
+@media (max-width: 991px) {
+  .contact-img {
+    display: none;
+  }
+}
+
+.contact-form {
+  margin-bottom: 100px;
 }
 
 footer {
