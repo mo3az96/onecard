@@ -2552,7 +2552,7 @@ header {
 }
 
 .breadcrumb li::after {
-  content: "/";
+  content: "";
   display: block;
   margin: 0 9px;
 }
@@ -3172,6 +3172,65 @@ header {
   .suggested-products {
     margin-bottom: 100px;
   }
+}
+
+.product-main-img {
+  position: relative;
+}
+
+.product-img {
+  overflow: hidden;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.product-img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.addToFav {
+  position: absolute;
+  top: 10px;
+  inset-inline-end: 7px;
+  -webkit-box-shadow: 3.536px 3.536px 10px 0px rgba(9, 82, 126, 0.1);
+          box-shadow: 3.536px 3.536px 10px 0px rgba(9, 82, 126, 0.1);
+  width: 34px;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: var(--text-color);
+  font-size: 22px;
+  cursor: pointer;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.addToFav i {
+  color: var(--text-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.addToFav.active {
+  background-color: #f93c3c;
+}
+
+.addToFav.active i {
+  color: #fff;
+  font-weight: 900;
 }
 
 footer {
