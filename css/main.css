@@ -2814,6 +2814,8 @@ header {
 .primary-btn:hover, .primary-btn:active {
   background-color: var(--primary-color);
   outline: none;
+  text-decoration: none;
+  color: #fff;
 }
 
 .secondary-btn {
@@ -2849,6 +2851,8 @@ header {
 .secondary-btn:hover, .secondary-btn:active {
   background-color: var(--secondery-color);
   outline: none;
+  text-decoration: none;
+  color: #fff;
 }
 
 .products-grid {
@@ -2924,6 +2928,10 @@ header {
   font-size: 16px;
   color: #889ba7;
   margin: 0;
+}
+
+.products-empty .empty-btn {
+  margin-top: 25px;
 }
 
 .section-head {
