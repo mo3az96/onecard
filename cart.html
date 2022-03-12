@@ -420,8 +420,374 @@
     <!-- Start Page Content -->
     <section class="page-content">
       <div class="container">
-        <h1 class="page-title">سلة الشراء</h1>
-       
+        <div class="cart-page">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="page-title">سلة الشراء</h1>
+              <div class="cart-list">
+                <div class="cart-item">
+                  <div class="item-body">
+                    <a href="productDetails.html" class="item-img">
+                      <img src="images/products/01.jpg" class="img-fluid" />
+                    </a>
+                    <div class="item-text">
+                      <h3 class="item-name">
+                        <a href="productDetails.html" class="item-name-anchor">
+                          بطاقة بلايستيشن ستور سعودي 10 دولار
+                        </a>
+                      </h3>
+                      <a href="subCategory.html" class="item-category">
+                        بلايستيشن سعودي
+                      </a>
+                      <span class="item-price"> 70.00 ريال </span>
+                      <span class="expire-date"> صالح حتى 30/3/2022 </span>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="item-delete"
+                    data-toggle="modal"
+                    data-target="#deleteConfirm"
+                    title="حذف من السلة"
+                  >
+                    <i class="las la-trash"></i>
+                  </button>
+                  <div class="item-footer">
+                    <div class="quantity">
+                      <strong> الكمية </strong>
+                      <select class="quantity-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                      </select>
+                    </div>
+                    <div class="final-price">70.00 ريال</div>
+                  </div>
+                </div>
+                <div class="cart-item">
+                  <div class="item-body">
+                    <a href="productDetails.html" class="item-img">
+                      <img src="images/products/02.jpg" class="img-fluid" />
+                    </a>
+                    <div class="item-text">
+                      <h3 class="item-name">
+                        <a href="productDetails.html" class="item-name-anchor">
+                          Pubg Mobile 600+ Free 60 UC $9.99 Recharge Voucher
+                        </a>
+                      </h3>
+                      <a href="subCategory.html" class="item-category">
+                        ببجي
+                      </a>
+                      <span class="item-price"> 70.00 ريال </span>
+                      <span class="expire-date"> صالح حتى 30/3/2022 </span>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="item-delete"
+                    data-toggle="modal"
+                    data-target="#deleteConfirm"
+                    title="حذف من السلة"
+                  >
+                    <i class="las la-trash"></i>
+                  </button>
+                  <div class="item-footer">
+                    <div class="quantity">
+                      <strong> الكمية </strong>
+                      <select class="quantity-select">
+                        <option>1</option>
+                        <option selected>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                      </select>
+                    </div>
+                    <div class="final-price">140.00 ريال</div>
+                  </div>
+                </div>
+              </div>
+              <div class="totals">
+                <div class="total">
+                  <span class="title"> إجمالي الكمية </span>
+                  <strong class="value">3</strong>
+                </div>
+                <div class="total">
+                  <span class="title"> إجمالي السعر </span>
+                  <strong class="value">210.00 ريال</strong>
+                </div>
+                <div class="total">
+                  <span class="title"> إجمالي الضريبة </span>
+                  <strong class="value">14.00 ريال</strong>
+                </div>
+                <div class="total">
+                  <span class="title">
+                    الإجمالي المستحق (السعر + الضريبة)
+                  </span>
+                  <strong class="value">224.00 ريال</strong>
+                </div>
+              </div>
+              <div class="cart-btns">
+                <a href="index.html" class="primary-btn continue">
+                  إضافة المزيد
+                </a>
+                <a href="checkout.html" class="secondary-btn checkout">
+                  تابع عملية الدفع
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="small-suggested-products">
+                <div class="products-head">
+                  <h2 class="products-title">الناس يشترون أيضا</h2>
+                </div>
+                <div class="products-small-slider">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product">
+                          <div class="img-here">
+                            <a href="productDetails.html" class="product-img">
+                              <img src="./images/products/03.jpg" />
+                            </a>
+                            <span class="discount-label">
+                              <i class="las la-check-circle"></i> وفرت 5 ريال
+                            </span>
+                            <button
+                              class="add-to-fav"
+                              data-toggle="tooltip"
+                              title="اضف إلى المفضلة"
+                            >
+                              <i class="lar la-heart"></i>
+                            </button>
+                          </div>
+                          <div class="product-info">
+                            <div class="product-name">
+                              <a href="productDetails.html">
+                                بطاقة بلايستيشن نتورك - بطاقة 50 دولار (المتجر
+                                الأمريكي)
+                              </a>
+                            </div>
+                            <a href="subCategory.html" class="product-category"
+                              >فري فاير</a
+                            >
+                            <div class="product-prices">
+                              <strong class="price">70.00 ريال</strong>
+                              <del class="old-price">75.00 ريال</del>
+                            </div>
+                          </div>
+                          <div class="product-tools">
+                            <button class="buy">
+                              <i class="las la-shopping-cart"></i>
+                              شراء سريع
+                            </button>
+                            <button
+                              class="add-to-cart"
+                              data-toggle="tooltip"
+                              title="اضف إلى السلة"
+                            >
+                              <i class="las la-cart-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product">
+                          <div class="img-here">
+                            <a href="productDetails.html" class="product-img">
+                              <img src="./images/products/04.jpg" />
+                            </a>
+                            <button
+                              class="add-to-fav active"
+                              data-toggle="tooltip"
+                              title="حذف من المفضلة"
+                            >
+                              <i class="lar la-heart"></i>
+                            </button>
+                          </div>
+                          <div class="product-info">
+                            <div class="product-name">
+                              <a href="productDetails.html">
+                                بطاقة بلايستيشن نتورك - بطاقة 50 دولار (المتجر
+                                الأمريكي)
+                              </a>
+                            </div>
+                            <a href="subCategory.html" class="product-category"
+                              >فري فاير</a
+                            >
+                            <div class="product-prices">
+                              <strong class="price">70.00 ريال</strong>
+                              <del class="old-price">75.00 ريال</del>
+                            </div>
+                          </div>
+                          <div class="product-tools">
+                            <button class="buy">
+                              <i class="las la-shopping-cart"></i>
+                              شراء سريع
+                            </button>
+                            <button
+                              class="add-to-cart"
+                              data-toggle="tooltip"
+                              title="اضف إلى السلة"
+                            >
+                              <i class="las la-cart-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product">
+                          <div class="img-here">
+                            <a href="productDetails.html" class="product-img">
+                              <img src="./images/products/05.jpg" />
+                            </a>
+                            <span class="discount-label">
+                              <i class="las la-check-circle"></i> وفرت 5 ريال
+                            </span>
+                            <button
+                              class="add-to-fav"
+                              data-toggle="tooltip"
+                              title="اضف إلى المفضلة"
+                            >
+                              <i class="lar la-heart"></i>
+                            </button>
+                          </div>
+                          <div class="product-info">
+                            <div class="product-name">
+                              <a href="productDetails.html">
+                                بطاقة بلايستيشن نتورك - بطاقة 50 دولار (المتجر
+                                الأمريكي)
+                              </a>
+                            </div>
+                            <a href="subCategory.html" class="product-category"
+                              >فري فاير</a
+                            >
+                            <div class="product-prices">
+                              <strong class="price">70.00 ريال</strong>
+                              <del class="old-price">75.00 ريال</del>
+                            </div>
+                          </div>
+                          <div class="product-tools">
+                            <button class="buy">
+                              <i class="las la-shopping-cart"></i>
+                              شراء سريع
+                            </button>
+                            <button
+                              class="add-to-cart"
+                              data-toggle="tooltip"
+                              title="اضف إلى السلة"
+                            >
+                              <i class="las la-cart-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product">
+                          <div class="img-here">
+                            <a href="productDetails.html" class="product-img">
+                              <img src="./images/products/06.jpg" />
+                            </a>
+                            <span class="discount-label">
+                              <i class="las la-check-circle"></i> وفرت 5 ريال
+                            </span>
+                            <button
+                              class="add-to-fav"
+                              data-toggle="tooltip"
+                              title="اضف إلى المفضلة"
+                            >
+                              <i class="lar la-heart"></i>
+                            </button>
+                          </div>
+                          <div class="product-info">
+                            <div class="product-name">
+                              <a href="productDetails.html">
+                                بطاقة بلايستيشن نتورك - بطاقة 50 دولار (المتجر
+                                الأمريكي)
+                              </a>
+                            </div>
+                            <a href="subCategory.html" class="product-category"
+                              >فري فاير</a
+                            >
+                            <div class="product-prices">
+                              <strong class="price">70.00 ريال</strong>
+                              <del class="old-price">75.00 ريال</del>
+                            </div>
+                          </div>
+                          <div class="product-tools">
+                            <button class="buy">
+                              <i class="las la-shopping-cart"></i>
+                              شراء سريع
+                            </button>
+                            <button
+                              class="add-to-cart"
+                              data-toggle="tooltip"
+                              title="اضف إلى السلة"
+                            >
+                              <i class="las la-cart-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product">
+                          <div class="img-here">
+                            <a href="productDetails.html" class="product-img">
+                              <img src="./images/products/07.jpg" />
+                            </a>
+                            <span class="discount-label">
+                              <i class="las la-check-circle"></i> وفرت 5 ريال
+                            </span>
+                            <button
+                              class="add-to-fav"
+                              data-toggle="tooltip"
+                              title="اضف إلى المفضلة"
+                            >
+                              <i class="lar la-heart"></i>
+                            </button>
+                          </div>
+                          <div class="product-info">
+                            <div class="product-name">
+                              <a href="productDetails.html">
+                                بطاقة بلايستيشن نتورك - بطاقة 50 دولار (المتجر
+                                الأمريكي)
+                              </a>
+                            </div>
+                            <a href="subCategory.html" class="product-category"
+                              >فري فاير</a
+                            >
+                            <div class="product-prices">
+                              <strong class="price">70.00 ريال</strong>
+                              <del class="old-price">75.00 ريال</del>
+                            </div>
+                          </div>
+                          <div class="product-tools">
+                            <button class="buy">
+                              <i class="las la-shopping-cart"></i>
+                              شراء سريع
+                            </button>
+                            <button
+                              class="add-to-cart"
+                              data-toggle="tooltip"
+                              title="اضف إلى السلة"
+                            >
+                              <i class="las la-cart-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End Page Content -->
@@ -522,6 +888,33 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <div
+      class="modal deleteConfirm"
+      id="deleteConfirm"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="las la-times"></i>
+          </button>
+          <p class="confirm-text">هل أنت متأكد من أنك تريد حذف هذه البطاقة ؟</p>
+          <div class="modal-btns">
+            <button type="button" class="primary-btn modal-btn" data-dismiss="modal">
+              احتفظ بالبطاقة
+            </button>
+            <button type="button" class="default-btn modal-btn">ازالة البطاقة اﻵن</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>

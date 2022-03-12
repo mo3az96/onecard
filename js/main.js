@@ -5,7 +5,7 @@ $(window).on("load", function () {
 });
 $(document).ready(function () {
   /***** tooltip *****/
-  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle]').tooltip();
 
   /***** product slider *****/
   var slides = document.getElementsByClassName("products-slider");
@@ -48,6 +48,36 @@ $(document).ready(function () {
       }
     );
   }
+  var smallproductswiper = new Swiper(".products-small-slider .swiper-container", {
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 8,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 9,
+      },
+    },
+    pagination: {
+      el: ".products-small-slider .swiper-pagination",
+      clickable: true,
+    },
+    on: {
+      init: function (swiper) {
+        $('[data-toggle="tooltip"]').tooltip();
+      },
+    },
+  });
 
   /***** testimonial slider *****/
   var testimonialswiper = new Swiper(".testimonials-slider .swiper-container", {
@@ -191,7 +221,9 @@ $(document).ready(function () {
       $(".product-main-p").siblings(".show-more-cont").show();
     }
     $(".product-main-summary .show-more").click(function (e) {
-      var text = $(this).parents(".product-main-summary").find(".product-main-p");
+      var text = $(this)
+        .parents(".product-main-summary")
+        .find(".product-main-p");
       var height = text.prop("scrollHeight");
       $(this).toggleClass("active");
       if ($(this).hasClass("active")) {
