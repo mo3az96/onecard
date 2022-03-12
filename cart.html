@@ -440,31 +440,35 @@
                         بلايستيشن سعودي
                       </a>
                       <span class="item-price"> 70.00 ريال </span>
-                      <span class="expire-date"> صالح حتى 30/3/2022 </span>
+                      <div class="date-price">
+                        <span class="expire-date"> صالح حتى 30/3/2022 </span>
+                      </div>
                     </div>
                   </div>
-                  <button
-                    type="button"
-                    class="item-delete"
-                    data-toggle="modal"
-                    data-target="#deleteConfirm"
-                    title="حذف من السلة"
-                  >
-                    <i class="las la-trash"></i>
-                  </button>
                   <div class="item-footer">
-                    <div class="quantity">
-                      <strong> الكمية </strong>
-                      <select class="quantity-select">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                      </select>
+                    <button
+                      type="button"
+                      class="item-delete"
+                      data-toggle="modal"
+                      data-target="#deleteConfirm"
+                      title="حذف من السلة"
+                    >
+                      <i class="las la-trash"></i>
+                    </button>
+                    <div class="item-tools">
+                      <div class="quantity">
+                        <strong> الكمية </strong>
+                        <select class="quantity-select">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                        </select>
+                      </div>
+                      <div class="final-price">70.00 ريال</div>
                     </div>
-                    <div class="final-price">70.00 ريال</div>
                   </div>
                 </div>
                 <div class="cart-item">
@@ -482,31 +486,35 @@
                         ببجي
                       </a>
                       <span class="item-price"> 70.00 ريال </span>
-                      <span class="expire-date"> صالح حتى 30/3/2022 </span>
+                      <div class="date-price">
+                        <span class="expire-date"> صالح حتى 30/3/2022 </span>
+                      </div>
                     </div>
                   </div>
-                  <button
-                    type="button"
-                    class="item-delete"
-                    data-toggle="modal"
-                    data-target="#deleteConfirm"
-                    title="حذف من السلة"
-                  >
-                    <i class="las la-trash"></i>
-                  </button>
                   <div class="item-footer">
-                    <div class="quantity">
-                      <strong> الكمية </strong>
-                      <select class="quantity-select">
-                        <option>1</option>
-                        <option selected>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                      </select>
+                    <button
+                      type="button"
+                      class="item-delete"
+                      data-toggle="modal"
+                      data-target="#deleteConfirm"
+                      title="حذف من السلة"
+                    >
+                      <i class="las la-trash"></i>
+                    </button>
+                    <div class="item-tools">
+                      <div class="quantity">
+                        <strong> الكمية </strong>
+                        <select class="quantity-select">
+                          <option>1</option>
+                          <option selected>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                        </select>
+                      </div>
+                      <div class="final-price">140.00 ريال</div>
                     </div>
-                    <div class="final-price">140.00 ريال</div>
                   </div>
                 </div>
               </div>
@@ -907,10 +915,16 @@
           </button>
           <p class="confirm-text">هل أنت متأكد من أنك تريد حذف هذه البطاقة ؟</p>
           <div class="modal-btns">
-            <button type="button" class="primary-btn modal-btn" data-dismiss="modal">
+            <button
+              type="button"
+              class="primary-btn modal-btn"
+              data-dismiss="modal"
+            >
               احتفظ بالبطاقة
             </button>
-            <button type="button" class="default-btn modal-btn">ازالة البطاقة اﻵن</button>
+            <button type="button" class="default-btn modal-btn">
+              ازالة البطاقة اﻵن
+            </button>
           </div>
         </div>
       </div>

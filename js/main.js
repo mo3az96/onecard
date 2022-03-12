@@ -233,4 +233,8 @@ $(document).ready(function () {
       }
     });
   }
+
+  $(".edit-btn").click(function () {
+    $(".item-footer").slideToggle(300);
+  });
 });
