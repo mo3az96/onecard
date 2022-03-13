@@ -4958,12 +4958,7 @@ html[dir="ltr"] .cart-item .quantity-select {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 15px;
-}
-
-@media (max-width: 767px) {
-  .user-form-cont {
-    min-height: 100vh;
-  }
+  min-height: 100vh;
 }
 
 .user-form-cont .small-head {
