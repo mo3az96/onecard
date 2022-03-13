@@ -5,7 +5,7 @@ $(window).on("load", function () {
 });
 $(document).ready(function () {
   /***** tooltip *****/
-  $('[data-toggle]').tooltip();
+  $("[data-toggle]").tooltip();
 
   /***** product slider *****/
   var slides = document.getElementsByClassName("products-slider");
@@ -48,36 +48,39 @@ $(document).ready(function () {
       }
     );
   }
-  var smallproductswiper = new Swiper(".products-small-slider .swiper-container", {
-    loop: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-        spaceBetween: 8,
+  var smallproductswiper = new Swiper(
+    ".products-small-slider .swiper-container",
+    {
+      loop: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 8,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 9,
+        },
       },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+      pagination: {
+        el: ".products-small-slider .swiper-pagination",
+        clickable: true,
       },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 30,
+      on: {
+        init: function (swiper) {
+          $('[data-toggle="tooltip"]').tooltip();
+        },
       },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 9,
-      },
-    },
-    pagination: {
-      el: ".products-small-slider .swiper-pagination",
-      clickable: true,
-    },
-    on: {
-      init: function (swiper) {
-        $('[data-toggle="tooltip"]').tooltip();
-      },
-    },
-  });
+    }
+  );
 
   /***** testimonial slider *****/
   var testimonialswiper = new Swiper(".testimonials-slider .swiper-container", {
@@ -237,4 +240,16 @@ $(document).ready(function () {
   $(".edit-btn").click(function () {
     $(".item-footer").slideToggle(300);
   });
+
+  var showPass = document.querySelector("#showPass");
+
+  showPass.onchange = function () {
+    sibling = showPass.parentElement.nextElementSibling;
+    sibling.focus()
+    if (showPass.checked) {
+      sibling.setAttribute("type", "text");
+    }else{
+      sibling.setAttribute("type", "password");
+    }
+  };
 });

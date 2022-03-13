@@ -2303,6 +2303,46 @@ textarea.form-control {
   margin: auto;
 }
 
+.input-cont-icon {
+  position: relative;
+}
+
+.input-cont-icon .form-control {
+  padding: 0 50px;
+}
+
+.input-cont-icon .input-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  inset-inline-start: 18px;
+  font-size: 20px;
+  color: #b5b7b9;
+}
+
+.input-cont-icon .password-show {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  inset-inline-end: 18px;
+  font-size: 20px;
+  color: #b5b7b9;
+}
+
+.input-cont-icon .password-show input {
+  display: none;
+}
+
+.input-cont-icon .password-show input:checked ~ i {
+  color: var(--primary-color);
+}
+
+.input-cont-icon .password-show input:checked ~ i::before {
+  content: "\f070";
+}
+
 .progress-bar {
   background-color: var(--secondery-color);
   border: none;
@@ -4867,6 +4907,281 @@ html[dir="ltr"] .cart-item .quantity-select {
   .receipt-table .table-item strong {
     font-size: 18px;
   }
+}
+
+.user-form-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 991px) {
+  .user-form-body {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.user-form-img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-form-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .user-form-img {
+    display: none;
+  }
+}
+
+.user-form-cont {
+  margin: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+}
+
+@media (max-width: 767px) {
+  .user-form-cont {
+    min-height: 100vh;
+  }
+}
+
+.user-form-cont .small-head {
+  max-width: 345px;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .user-form-cont .small-head {
+    width: 100%;
+    max-width: none;
+    padding-top: 10px;
+  }
+}
+
+.user-form-cont .small-footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .user-form-cont {
+    width: 100%;
+  }
+}
+
+.small-body {
+  width: 100%;
+  max-width: 345px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding-top: 38px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .small-body {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.small-body-title {
+  font-size: 18px;
+  color: var(--secondery-color);
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.form-register-link {
+  font-size: 15px;
+  color: var(--secondery-color);
+  margin: 0 0 27px;
+}
+
+.form-register-link a {
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-register-link a:hover {
+  text-decoration: none;
+}
+
+.social-log {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.social-log-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 45px;
+  border-radius: 22.5px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-log-link:last-of-type {
+  margin: 0;
+}
+
+.social-log-link .social-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  inset-inline-start: 18px;
+  width: 21px;
+  font-size: 24px;
+}
+
+.social-log-link.facebook-log {
+  background-color: #1877f2;
+  color: #fff;
+}
+
+.social-log-link.google-log {
+  background-color: #f2f6f8;
+  color: #333333;
+}
+
+.social-log-link.twitter-log {
+  background-color: #1d9bf0;
+  color: #fff;
+}
+
+.social-log-link:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.or {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 22px;
+}
+
+.or::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #ecf1f4;
+  width: 100%;
+  height: 1px;
+  content: "";
+}
+
+.or span {
+  display: block;
+  text-align: center;
+  color: #afb1b2;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  width: 50px;
+}
+
+.log-form {
+  width: 100%;
+}
+
+.log-form .form-group {
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+.forgt-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.forgt-cont a {
+  color: var(--secondery-color);
+  font-size: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.forgt-cont a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 footer {
