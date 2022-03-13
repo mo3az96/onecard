@@ -5005,9 +5005,9 @@ html[dir="ltr"] .cart-item .quantity-select {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 100%;
   padding-top: 38px;
   padding-bottom: 50px;
@@ -5027,13 +5027,13 @@ html[dir="ltr"] .cart-item .quantity-select {
   margin: 0 0 12px;
 }
 
-.form-register-link {
+.small-body-subtitle {
   font-size: 15px;
   color: var(--secondery-color);
   margin: 0 0 27px;
 }
 
-.form-register-link a {
+.small-body-subtitle a {
   font-weight: 700;
   color: var(--primary-color);
   text-decoration: underline;
@@ -5041,7 +5041,7 @@ html[dir="ltr"] .cart-item .quantity-select {
   transition: all 0.3s ease-in-out;
 }
 
-.form-register-link a:hover {
+.small-body-subtitle a:hover {
   text-decoration: none;
 }
 
