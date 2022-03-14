@@ -241,15 +241,13 @@ $(document).ready(function () {
     $(".item-footer").slideToggle(300);
   });
 
-  var showPass = document.querySelector("#showPass");
-
-  showPass.onchange = function () {
-    sibling = showPass.parentElement.nextElementSibling;
-    sibling.focus()
-    if (showPass.checked) {
-      sibling.setAttribute("type", "text");
-    }else{
-      sibling.setAttribute("type", "password");
-    }
-  };
 });
+function showPass(showPass) {
+  sibling = showPass.parentElement.nextElementSibling;
+  sibling.focus();
+  if (showPass.checked) {
+    sibling.setAttribute("type", "text");
+  } else {
+    sibling.setAttribute("type", "password");
+  }
+}
