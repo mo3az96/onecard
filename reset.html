@@ -29,37 +29,42 @@
           <a href="index.html" class="logo">
             <img src="images/logo.svg" class="img-fluid" />
           </a>
-          <a href="login.html" class="back-shopping">
-            <i class="las la-arrow-right"></i>
-            رحوع
-          </a>
         </div>
         <!-- End Header -->
 
         <!-- Start Body -->
         <div class="small-body">
           <h1 class="small-body-title">اعادة تعيين كلمة المرور</h1>
-          <h6 class="small-body-subtitle">
-            فضلا قم بإدخال بريدك الإلكتروني المسجل وستصلك بها رابط إعادة تعيين
-            كلمة المرور
-          </h6>
           <form class="log-form">
             <div class="form-group">
               <div class="input-cont-icon">
-                <i class="las la-envelope input-icon"></i>
+                <i class="las la-lock input-icon"></i>
+                <label class="password-show">
+                  <input type="checkbox" onchange="showPass(this)" />
+                  <i class="las la-eye"></i>
+                </label>
                 <input
-                  type="email"
+                  type="password"
                   class="form-control"
-                  placeholder="البريد الإلكتروني"
+                  placeholder="كلمة المرور الجديدة"
                 />
               </div>
             </div>
-            <a href="reset.html" class="primary-btn submit-btn">
-              ارسال الرابط
-            </a>
-            <!-- <button type="submit" class="primary-btn submit-btn">
-              ارسال الرابط
-            </button> -->
+            <div class="form-group">
+              <div class="input-cont-icon">
+                <i class="las la-lock input-icon"></i>
+                <label class="password-show">
+                  <input type="checkbox" onchange="showPass(this)" />
+                  <i class="las la-eye"></i>
+                </label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="تأكيد كلمة المرور الجديدة"
+                />
+              </div>
+            </div>
+            <button type="submit" class="primary-btn submit-btn">تعيين كلمة المرور</button>
           </form>
         </div>
         <!-- End Body -->
