@@ -2462,6 +2462,7 @@ textarea.form-control {
 
 .input-date {
   position: relative;
+  width: 100%;
 }
 
 .input-date .date-icon {
@@ -5844,6 +5845,197 @@ html[dir="ltr"] .cart-item .quantity-select {
           margin-inline-end: 20px;
 }
 
+.date-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  background-color: var(--secondery-color);
+  padding: 30px 20px;
+}
+
+@media (max-width: 767px) {
+  .date-line {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px 13px 17px;
+  }
+}
+
+.date-line .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  -webkit-margin-end: 14px;
+          margin-inline-end: 14px;
+  width: 100%;
+}
+
+.date-line .form-group span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  -webkit-margin-end: 11px;
+          margin-inline-end: 11px;
+}
+
+@media (max-width: 767px) {
+  .date-line .form-group {
+    width: calc(50% - 4px);
+    margin: 0;
+  }
+  .date-line .form-group ~ .form-group {
+    -webkit-margin-start: 8px;
+            margin-inline-start: 8px;
+  }
+}
+
+.date-line .filter-btn {
+  width: 124px;
+  min-width: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: 2px solid var(--primary-color);
+}
+
+.date-line .filter-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+@media (max-width: 767px) {
+  .date-line .filter-btn {
+    width: 100%;
+    margin-top: 11px;
+  }
+}
+
+.reset-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.reset-cont .filter-reset {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #a4b5c5;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.reset-cont .filter-reset i {
+  font-size: 24px;
+  -webkit-margin-end: 8px;
+          margin-inline-end: 8px;
+}
+
+.reset-cont .filter-reset:hover {
+  color: var(--primary-color);
+}
+
+.order-list {
+  margin-top: 27px;
+}
+
+.order-item {
+  margin-bottom: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #f2f6f8;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.order-item:last-of-type {
+  margin: 0;
+}
+
+.order-item .item-img {
+  width: 97px;
+  border-radius: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-margin-end: 18px;
+          margin-inline-end: 18px;
+  overflow: hidden;
+  display: block;
+}
+
+.order-item .item-text {
+  width: 100%;
+  padding-top: 12px;
+}
+
+.order-item .desc-items {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 767px) {
+  .order-item .desc-items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.order-item .desc-item {
+  font-size: 16px;
+  color: var(--secondery-color);
+  margin-bottom: 11px;
+}
+
+.order-item .desc-item strong {
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  margin-top: 4px;
+}
+
+.order-item .expire-date {
+  font-size: 13px;
+  color: #ff0000;
+  display: block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.order-item:hover {
+  background-color: #ecedf6;
+  text-decoration: none;
+}
+
 footer {
   background-color: var(--secondery-color);
 }
@@ -6214,7 +6406,7 @@ footer {
   color: var(--text-color);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .small-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

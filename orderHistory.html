@@ -412,7 +412,7 @@
           <li>
             <a href="index.html">الرئيسية</a>
           </li>
-          <li class="active">تفاصيل الحساب</li>
+          <li class="active">تاريخ الطلب</li>
         </ol>
       </div>
     </section>
@@ -422,163 +422,112 @@
     <section class="page-content">
       <div class="container">
         <div class="user-info-page">
-          <h1 class="page-title">
-            تفاصيل الحساب
-            <button class="edit-info primary-btn">
-              <i class="las la-edit"></i>
-              تعديل
-            </button>
-          </h1>
+          <h1 class="page-title">تاريخ الطلب</h1>
           <div class="row">
             <div class="col-lg-8">
-              <div class="form-block">
-                <h2 class="block-title">
-                  <i class="las la-user"></i>
-                  بياناتك الشخصية
-                </h2>
-                <div class="form-line">
+              <form class="date-filter">
+                <div class="date-line">
                   <div class="form-group">
-                    <label>الاسم بالكامل</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      disabled
-                      value="بسام العميري"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label>البريد الإلكتروني</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      disabled
-                      value="bassam.alomari@gmail.com"
-                    />
-                  </div>
-                </div>
-                <div class="form-line">
-                  <div class="form-group">
-                    <label>
-                      دولة المتجر
-                      <span data-toggle="tooltip" title="نص تجريبي">
-                        <i class="las la-question-circle"></i>
-                      </span>
-                    </label>
-                    <select class="form-control" disabled>
-                      <option>السعودية</option>
-                      <option>السعودية</option>
-                      <option>السعودية</option>
-                      <option>السعودية</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label>رقم الجوال</label>
-                    <div class="input-group">
-                      <input
-                        type="tel"
-                        class="form-control"
-                        disabled
-                        value="5000000000"
-                      />
-                      <span class="country-key">
-                        +966
-                        <img src="images/icons/sa.png" class="img-fluid" />
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-line">
-                  <div class="form-group">
-                    <label>تاريخ الميلاد</label>
+                    <span>من</span>
                     <div class="input-date">
                       <input
                         type="text"
                         class="form-control form-flatpickr"
                         value="2016-10-10"
-                        disabled
                       />
                       <i class="las la-calendar date-icon"></i>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label> المدينة </label>
-                    <select class="form-control" disabled>
-                      <option>الرياض</option>
-                      <option>الرياض</option>
-                      <option>الرياض</option>
-                      <option>الرياض</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label>النوع</label>
-                  <div class="radios-grid">
-                    <div class="radio">
-                      <label>
-                        <input type="radio" name="type" checked="checked" disabled/>
-                        <span class="mark"></span>
-                        ذكر
-                      </label>
-                    </div>
-                    <div class="radio">
-                      <label>
-                        <input type="radio" name="type" disabled/>
-                        <span class="mark"></span>
-                        انثى
-                      </label>
+                    <span>إلى</span>
+                    <div class="input-date">
+                      <input
+                        type="text"
+                        class="form-control form-flatpickr"
+                        value="2016-10-10"
+                      />
+                      <i class="las la-calendar date-icon"></i>
                     </div>
                   </div>
+                  <button type="submit" class="secondary-btn filter-btn">
+                    تصفية
+                  </button>
                 </div>
-              </div>
-              <div class="form-block">
-                <h2 class="block-title">
-                  <i class="las la-sliders-h"></i>
-                  الإهتمامات
-                </h2>
-                <div class="checkboxes-grid">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" disabled />
-                      <span class="mark"><i class="las la-check"></i></span>
-                      الألعاب
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" disabled />
-                      <span class="mark"><i class="las la-check"></i></span>
-                      التسوق
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" disabled />
-                      <span class="mark"><i class="las la-check"></i></span>
-                      باقة الانترنت
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" disabled />
-                      <span class="mark"><i class="las la-check"></i></span>
-                      الاتصالات
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" disabled />
-                      <span class="mark"><i class="las la-check"></i></span>
-                      قسائم التسوق
-                    </label>
-                  </div>
+                <div class="reset-cont">
+                  <button type="reset" class="filter-reset">
+                    <i class="las la-redo-alt"></i>
+                    إلغاء التصفية
+                  </button>
                 </div>
+              </form>
+              <div class="order-list">
+                <a href="receipt.html" class="order-item">
+                  <div class="item-img">
+                    <img src="images/products/02.jpg" class="img-fluid" />
+                  </div>
+                  <div class="item-text">
+                    <div class="desc-items">
+                        <div class="desc-item">
+                            رقم الفاتورة
+                            <strong>1645961294254309895</strong>
+                        </div>
+                        <div class="desc-item">
+                            إجمالي المدفوعات
+                            <strong>140 ريال</strong>
+                        </div>
+                    </div>
+                    <div class="expire-date">
+                        صالح حتى 30/3/2022
+                    </div>
+                  </div>
+                </a>
+                <a href="receipt.html" class="order-item">
+                  <div class="item-img">
+                    <img src="images/products/01.jpg" class="img-fluid" />
+                  </div>
+                  <div class="item-text">
+                    <div class="desc-items">
+                        <div class="desc-item">
+                            رقم الفاتورة
+                            <strong>1645961294254309895</strong>
+                        </div>
+                        <div class="desc-item">
+                            إجمالي المدفوعات
+                            <strong>140 ريال</strong>
+                        </div>
+                    </div>
+                    <div class="expire-date">
+                        صالح حتى 30/3/2022
+                    </div>
+                  </div>
+                </a>
+                <a href="receipt.html" class="order-item">
+                  <div class="item-img">
+                    <img src="images/products/03.jpg" class="img-fluid" />
+                  </div>
+                  <div class="item-text">
+                    <div class="desc-items">
+                        <div class="desc-item">
+                            رقم الفاتورة
+                            <strong>1645961294254309895</strong>
+                        </div>
+                        <div class="desc-item">
+                            إجمالي المدفوعات
+                            <strong>140 ريال</strong>
+                        </div>
+                    </div>
+                    <div class="expire-date">
+                        صالح حتى 30/3/2022
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="side-links">
-                <a href="orderHistory.html" class="side-link">
-                  <i class="las la-history"></i>
-                  تاريخ الطلب
+                <a href="info.html" class="side-link">
+                  <i class="las la-user"></i>
+                  تفاصيل الحساب
                 </a>
                 <a href="favList.html" class="side-link">
                   <i class="lar la-heart"></i>
