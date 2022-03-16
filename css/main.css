@@ -5774,6 +5774,12 @@ html[dir="ltr"] .cart-item .quantity-select {
   margin-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+  .form-block {
+    margin-bottom: 20px;
+  }
+}
+
 .form-block:last-of-type {
   margin: 0;
 }
