@@ -259,6 +259,8 @@ $(document).ready(function () {
       }
     });
   });
+
+  flatpickr(".form-flatpickr");
 });
 function showPass(showPass) {
   sibling = showPass.parentElement.nextElementSibling;
