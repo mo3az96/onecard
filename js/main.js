@@ -271,3 +271,10 @@ function showPass(showPass) {
     sibling.setAttribute("type", "password");
   }
 }
+
+function edit() {
+  var editableElements = document.querySelectorAll("input.editable");
+  editableElements.forEach((ele) => {
+    ele.removeAttribute("disabled");
+  });
+}
