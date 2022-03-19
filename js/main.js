@@ -264,6 +264,29 @@ $(document).ready(function () {
 
   const progressBar = document.getElementById("pointsProgress");
   progressBar.style.width = progressBar.getAttribute("data-width");
+
+  /***** gifts slider *****/
+  var giftswiper = new Swiper(".gifts-slider .swiper-container", {
+    // loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      767: {
+        slidesPerView: 3,
+      },
+      1199: {
+        slidesPerView: 3,
+      },
+    },
+    pagination: {
+      el: ".gifts-slider .swiper-pagination",
+      clickable: true,
+    },
+    observer: true,
+    observeParents: true,
+  });
 });
 function showPass(showPass) {
   sibling = showPass.parentElement.nextElementSibling;

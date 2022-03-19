@@ -544,6 +544,18 @@ html[dir="ltr"] .header-list > li > a {
   display: flex;
 }
 
+.gifts-slider .swiper-pagination {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .gifts-slider .swiper-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 main {
   margin-top: 20px;
 }
@@ -2112,6 +2124,59 @@ html[dir="ltr"] .lang-select ~ .select2-container .select2-selection--single .se
 .modal-btns .modal-btn {
   width: 100%;
   min-width: 100%;
+}
+
+@media (min-width: 767px) {
+  .giftsModal .modal-dialog {
+    width: 789px;
+    max-width: 789px;
+  }
+}
+
+.giftsModal .modal-content {
+  padding: 55px 45px 45px;
+}
+
+@media (max-width: 767px) {
+  .giftsModal .modal-content {
+    padding-inline: 12px;
+  }
+}
+
+.giftsModal .gifts-title {
+  text-align: center;
+  font-size: 24px;
+  color: var(--secondery-color);
+  font-weight: 500;
+  margin: 0 0 35px;
+}
+
+.giftsModal .modal-btn {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  width: 180px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 22.5px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  margin: 40px auto 0;
+  border: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.giftsModal .modal-btn:hover {
+  background-color: var(--secondery-color);
 }
 
 .form-group {
@@ -3888,6 +3953,27 @@ html[dir="ltr"] select {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+}
+
+.gift-slide {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 220px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gift-slide input {
+  display: none;
 }
 
 .progress-bar {
