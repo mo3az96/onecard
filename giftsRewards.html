@@ -445,13 +445,13 @@
                 </a>
               </li>
               <li>
-                <a class="active" data-toggle="tab" href="#Coupons">
+                <a data-toggle="tab" href="#Coupons">
                   <i class="las la-tags"></i>
                   <span> كوبونات الخصم </span>
                 </a>
               </li>
               <li>
-                <a data-toggle="tab" href="#Share">
+                <a class="active" data-toggle="tab" href="#Share">
                   <i class="las la-copy"></i>
                   <span> شارك واربح</span>
                 </a>
@@ -459,7 +459,7 @@
             </ul>
             <div class="tab-content">
               <div class="tab-pane fade" id="GetGift">GetGift</div>
-              <div class="tab-pane fade show active" id="Coupons">
+              <div class="tab-pane fade" id="Coupons">
                 <div class="coupons-list">
                   <div class="coupon-item">
                     <div class="item-img">
@@ -475,7 +475,12 @@
                       </p>
                       <div class="item-code">
                         <strong>OC2022</strong>
-                        <a role="button" class="copy-code" data-code="OC2022" onclick="copyText(this)">
+                        <a
+                          role="button"
+                          class="copy-code"
+                          data-code="OC2022"
+                          onclick="copyText(this)"
+                        >
                           <i class="las la-copy"></i>
                           <span class="text">نسخ الكود</span>
                         </a>
@@ -496,7 +501,12 @@
                       </p>
                       <div class="item-code">
                         <strong>OC2023</strong>
-                        <a role="button" class="copy-code" data-code="OC2023" onclick="copyText(this)">
+                        <a
+                          role="button"
+                          class="copy-code"
+                          data-code="OC2023"
+                          onclick="copyText(this)"
+                        >
                           <i class="las la-copy"></i>
                           <span class="text">نسخ الكود</span>
                         </a>
@@ -505,7 +515,43 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="Share">Share</div>
+              <div class="tab-pane fade show active" id="Share">
+                <h5 class="share-title">
+                  انسخ الكود الخاص بك وانقله إلى أصدقائك لتحصل على نقاط اكثر
+                </h5>
+                <div class="share-form">
+                  <input
+                    type="text"
+                    class="share-input"
+                    value="https://www.onecard.net/sa-ar/register;code=doWzTKwY"
+                    readonly
+                  />
+                  <a
+                    role="button"
+                    class="copy-link"
+                    data-code="https://www.onecard.net/sa-ar/register;code=doWzTKwY"
+                    onclick="copyText(this)"
+                  >
+                    <i class="las la-copy"></i>
+                    <span class="text">نسخ الكود</span>
+                  </a>
+                </div>
+                <h5 class="share-title">أو شاركه عبر وسائل التواصل</h5>
+                <div class="share-links">
+                  <a href="#!">
+                    <i class="las la-envelope"></i>
+                  </a>
+                  <a href="#!" class="whatsapp">
+                    <i class="lab la-whatsapp"></i>
+                  </a>
+                  <a href="#!" class="twitter">
+                    <i class="lab la-twitter"></i>
+                  </a>
+                  <a href="#!" class="facebook">
+                    <i class="lab la-facebook-f"></i>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="rewards-conditions">
               <h6 class="conditions-title">الشروط و الأحكام</h6>

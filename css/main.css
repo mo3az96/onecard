@@ -6496,6 +6496,153 @@ html[dir="ltr"] .cart-item .quantity-select {
   }
 }
 
+.share-title {
+  font-size: 18px;
+  color: var(--secondery-color);
+  font-weight: 500;
+  margin: 0 0 23px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+  .share-title {
+    font-size: 16px;
+    margin: 0 0 21px;
+  }
+}
+
+.share-form {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .share-form {
+    margin-bottom: 21px;
+  }
+}
+
+.share-form .share-input {
+  width: 100%;
+  height: 60px;
+  background-color: #fafbfd;
+  border: 2px solid #ecedf6;
+  font-size: 18px;
+  color: #707f89;
+  border-radius: 30px;
+  padding: 0 40px;
+}
+
+.share-form .copy-link {
+  position: absolute;
+  top: 7.5px;
+  inset-inline-end: 10px;
+  width: 179px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 17px;
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 22.5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.share-form .copy-link i {
+  font-size: 30px;
+}
+
+.share-form .copy-link .text {
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-margin-start: 24px;
+          margin-inline-start: 24px;
+}
+
+.share-form .copy-link:hover {
+  background-color: var(--secondery-color);
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .share-form .copy-link {
+    width: 45px;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .share-form .copy-link .text {
+    display: none;
+  }
+}
+
+.share-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .share-links {
+    padding-bottom: 21px;
+  }
+}
+
+.share-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 7px;
+  border-radius: 50%;
+  background-color: #97afc3;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  font-size: 26px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.share-links a.whatsapp {
+  background-color: #1cdf57;
+}
+
+.share-links a.twitter {
+  background-color: #1c9cea;
+}
+
+.share-links a.facebook {
+  background-color: #1773ea;
+}
+
+.share-links a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+}
+
 footer {
   background-color: var(--secondery-color);
 }
