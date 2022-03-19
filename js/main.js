@@ -246,7 +246,7 @@ $(document).ready(function () {
   inputElements.forEach((ele, index) => {
     ele.addEventListener("input", (e) => {
       const [first] = e.target.value;
-      e.target.value = first ?? ""; 
+      e.target.value = first ?? "";
       const lastInputBox = index === inputElements.length - 1;
       const insertedContent = first !== undefined;
       if (insertedContent && !lastInputBox) {
@@ -261,6 +261,9 @@ $(document).ready(function () {
   });
 
   flatpickr(".form-flatpickr");
+
+  const progressBar = document.getElementById("pointsProgress");
+  progressBar.style.width = progressBar.getAttribute("data-width");
 });
 function showPass(showPass) {
   sibling = showPass.parentElement.nextElementSibling;
@@ -277,4 +280,8 @@ function edit() {
   editableElements.forEach((ele) => {
     ele.removeAttribute("disabled");
   });
+}
+
+function copyText(copyText) {
+  navigator.clipboard.writeText(copyText.getAttribute("data-code"));
 }
