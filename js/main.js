@@ -263,7 +263,9 @@ $(document).ready(function () {
   flatpickr(".form-flatpickr");
 
   const progressBar = document.getElementById("pointsProgress");
-  progressBar.style.width = progressBar.getAttribute("data-width");
+  if (progressBar) {
+    progressBar.style.width = progressBar.getAttribute("data-width");
+  }
 
   /***** gifts slider *****/
   var giftswiper = new Swiper(".gifts-slider .swiper-container", {
