@@ -112,7 +112,7 @@ $(document).ready(function () {
   /***** view more review *****/
   $(".review").each(function () {
     var height = $(this).prop("scrollHeight");
-    if (height > 73) {
+    if (height > 66) {
       $(this).addClass("trim");
       $(this).siblings(".more-cont").show();
     }
@@ -124,7 +124,7 @@ $(document).ready(function () {
     if ($(this).hasClass("active")) {
       text.height(height).css("display", "block");
     } else {
-      text.height(72);
+      text.height(65);
     }
   });
 
