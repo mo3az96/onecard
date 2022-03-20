@@ -239,6 +239,7 @@ $(document).ready(function () {
 
   $(".edit-btn").click(function () {
     $(".item-footer").slideToggle(300);
+    $(".date-price .price").fadeToggle(300);
   });
 
   const inputElements = [...document.querySelectorAll("input.code-input")];
