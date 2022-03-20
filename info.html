@@ -424,10 +424,20 @@
         <div class="user-info-page">
           <h1 class="page-title">
             تفاصيل الحساب
-            <button class="edit-info primary-btn" onclick="edit()">
+            <button class="edit-info primary-btn" onclick="edit(this)">
               <i class="las la-edit"></i>
               تعديل
             </button>
+            <div class="edit-btns">
+              <button class="edit-info secondary-btn">
+                <i class="las la-save"></i>
+                حفظ
+              </button>
+              <button class="edit-info default-btn">
+                <i class="las la-redo-alt"></i>
+                الغاء
+              </button>
+            </div>
           </h1>
           <div class="row">
             <div class="col-lg-8">
@@ -515,14 +525,25 @@
                   <div class="radios-grid">
                     <div class="radio">
                       <label>
-                        <input type="radio" name="type" checked="checked" disabled class="info-input editable"/>
+                        <input
+                          type="radio"
+                          name="type"
+                          checked="checked"
+                          disabled
+                          class="info-input editable"
+                        />
                         <span class="mark"></span>
                         ذكر
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="type" disabled class="info-input editable"/>
+                        <input
+                          type="radio"
+                          name="type"
+                          disabled
+                          class="info-input editable"
+                        />
                         <span class="mark"></span>
                         انثى
                       </label>
@@ -538,35 +559,55 @@
                 <div class="checkboxes-grid">
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" disabled class="info-input editable"/>
+                      <input
+                        type="checkbox"
+                        disabled
+                        class="info-input editable"
+                      />
                       <span class="mark"><i class="las la-check"></i></span>
                       الألعاب
                     </label>
                   </div>
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" disabled class="info-input editable"/>
+                      <input
+                        type="checkbox"
+                        disabled
+                        class="info-input editable"
+                      />
                       <span class="mark"><i class="las la-check"></i></span>
                       التسوق
                     </label>
                   </div>
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" disabled class="info-input editable"/>
+                      <input
+                        type="checkbox"
+                        disabled
+                        class="info-input editable"
+                      />
                       <span class="mark"><i class="las la-check"></i></span>
                       باقة الانترنت
                     </label>
                   </div>
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" disabled class="info-input editable"/>
+                      <input
+                        type="checkbox"
+                        disabled
+                        class="info-input editable"
+                      />
                       <span class="mark"><i class="las la-check"></i></span>
                       الاتصالات
                     </label>
                   </div>
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" disabled class="info-input editable"/>
+                      <input
+                        type="checkbox"
+                        disabled
+                        class="info-input editable"
+                      />
                       <span class="mark"><i class="las la-check"></i></span>
                       قسائم التسوق
                     </label>

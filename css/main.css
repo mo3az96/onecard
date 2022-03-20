@@ -7358,6 +7358,17 @@ html[dir="ltr"] .cart-item .quantity-select {
   }
 }
 
+.edit-btns {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-btns .default-btn:hover {
+  background-color: var(--secondery-color);
+}
+
 .edit-info {
   height: 40px;
   font-size: 16px;
@@ -7371,6 +7382,17 @@ html[dir="ltr"] .cart-item .quantity-select {
   font-size: 24px;
   -webkit-margin-end: 10px;
           margin-inline-end: 10px;
+}
+
+@media (max-width: 767px) {
+  .edit-info {
+    width: 100px;
+    margin: 0;
+  }
+  .edit-info ~ .edit-info {
+    -webkit-margin-start: 10px;
+            margin-inline-start: 10px;
+  }
 }
 
 .form-block {

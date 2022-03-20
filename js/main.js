@@ -301,7 +301,10 @@ function showPass(showPass) {
   }
 }
 
-function edit() {
+function edit(button) {
+  button.style.display = "none";
+  var editBtns = document.querySelectorAll(".edit-btns")[0];
+  editBtns.style.display = "flex";
   var editableElements = document.querySelectorAll("input.editable");
   editableElements.forEach((ele) => {
     ele.removeAttribute("disabled");
