@@ -8494,7 +8494,7 @@ footer {
 }
 
 header.fixed {
-  position: fixed;
+  position: absolute;
   top: -200px;
   left: 0;
   right: 0;
@@ -8534,6 +8534,7 @@ header.fixed .header-list > li > a {
 }
 
 header.fixed.fixsedt {
+  position: fixed;
   top: 0;
 }
 
