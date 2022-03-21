@@ -1297,6 +1297,7 @@ main {
 }
 
 .testimonial .review p {
+  font-size: 14px;
   margin: 0;
 }
 
@@ -4845,6 +4846,16 @@ header {
 
 .side-link:hover i {
   color: var(--primary-color);
+}
+
+.infomation-content {
+  margin-bottom: 70px;
+}
+
+.infomation-content p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #393939;
 }
 
 .products-grid {
