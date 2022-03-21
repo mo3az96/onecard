@@ -4849,8 +4849,8 @@ header {
 
 .infomation-content p {
   font-size: 16px;
-  font-weight: 500;
   color: #393939;
+  line-height: 1.75;
 }
 
 .products-grid {
@@ -8338,6 +8338,79 @@ html[dir="ltr"] .cart-item .quantity-select {
 .faqs-list li .accordion-head strong::before {
   content: counter(item) ". ";
   counter-increment: item;
+}
+
+.howToBuy-content {
+  margin-bottom: 70px;
+}
+
+.howToBuy-content p {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.howToBuy-content h6 {
+  color: #393939;
+  font-weight: 700;
+  display: block;
+  font-size: 16px;
+}
+
+.howToBuy-content ol {
+  font-size: 16px;
+  color: #393939;
+  counter-reset: item;
+  line-height: 1.75;
+}
+
+.howToBuy-content ol li {
+  display: block;
+}
+
+.howToBuy-content ol li::before {
+  display: inline-block;
+  content: counter(item) "- ";
+  counter-increment: item;
+  width: 14px;
+}
+
+.howToBuy-video {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25px;
+}
+
+@media (max-width: 1199px) {
+  .howToBuy-video {
+    position: relative;
+    top: auto;
+  }
+}
+
+.howToBuy-video iframe {
+  height: 367px;
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .howToBuy-video iframe {
+    height: 535px;
+  }
+}
+
+@media (max-width: 991px) {
+  .howToBuy-video iframe {
+    height: 383px;
+  }
+}
+
+@media (max-width: 767px) {
+  .howToBuy-video iframe {
+    margin: auto;
+    width: 320px;
+    height: 189px;
+    display: block;
+  }
 }
 
 footer {
