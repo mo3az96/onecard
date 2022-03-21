@@ -8237,6 +8237,96 @@ html[dir="ltr"] .cart-item .quantity-select {
   text-decoration: none;
 }
 
+.information-accrdion {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px;
+}
+
+.information-accrdion .accordion-head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #393939;
+  text-align: start;
+}
+
+@media (max-width: 767px) {
+  .information-accrdion .accordion-head {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+.information-accrdion .accordion-head::after {
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  content: "\f107";
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .information-accrdion .accordion-head::after {
+    font-size: 16px;
+  }
+}
+
+.information-accrdion .accordion-head.active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.information-accrdion .accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
+}
+
+.information-accrdion .accordion-body {
+  background-color: #f2f6f8;
+  padding: 15px;
+}
+
+@media (max-width: 767px) {
+  .information-accrdion .accordion-body {
+    padding: 10px;
+  }
+}
+
+.information-accrdion .accordion-body p {
+  font-size: 16px;
+  color: #393939;
+}
+
+.information-accrdion .accordion-body p:last-of-type {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .information-accrdion .accordion-body p {
+    font-size: 14px;
+  }
+}
+
 footer {
   background-color: var(--secondery-color);
 }
