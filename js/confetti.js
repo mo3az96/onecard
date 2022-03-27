@@ -7,19 +7,19 @@ cx = ctx.canvas.width / 2;
 cy = ctx.canvas.height / 2;
 
 let confetti = [];
-const confettiCount = 300;
+const confettiCount = 500;
 const gravity = 0.5;
 const terminalVelocity = 5;
 const drag = 0.075;
 const colors = [
-{ front: 'red', back: 'darkred' },
-{ front: 'green', back: 'darkgreen' },
-{ front: 'blue', back: 'darkblue' },
-{ front: 'yellow', back: 'darkyellow' },
-{ front: 'orange', back: 'darkorange' },
-{ front: 'pink', back: 'darkpink' },
-{ front: 'purple', back: 'darkpurple' },
-{ front: 'turquoise', back: 'darkturquoise' }];
+{ front: 'darkred', back: 'darkred' },
+{ front: 'darkgreen', back: 'darkgreen' },
+{ front: 'darkblue', back: 'darkblue' },
+{ front: 'darkyellow', back: 'darkyellow' },
+{ front: 'darkorange', back: 'darkorange' },
+{ front: 'darkpink', back: 'darkpink' },
+{ front: 'darkpurple', back: 'darkpurple' },
+{ front: 'darkturquoise', back: 'darkturquoise' }];
 
 
 //-----------Functions--------------
