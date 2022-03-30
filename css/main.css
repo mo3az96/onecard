@@ -5180,6 +5180,7 @@ header {
 
 .category-page-content {
   padding-bottom: 134px;
+  position: relative;
 }
 
 @media (max-width: 1199px) {
@@ -5372,6 +5373,19 @@ header {
 
 .desc-btn.active:hover {
   background-color: var(--primary-color);
+}
+
+.category-banners {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25px;
+}
+
+@media (max-width: 1199px) {
+  .category-banners {
+    position: relative;
+    top: auto;
+  }
 }
 
 .subcategory-head {
