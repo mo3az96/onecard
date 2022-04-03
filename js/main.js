@@ -2,6 +2,14 @@ $(window).on("load", function () {
   $(".progress-bar").fadeOut("300", function () {
     $(this).remove();
   });
+
+  var checked = localStorage.getItem("mode");
+  if (checked == "darkMode") {
+    if (document.querySelectorAll(".mode-switch input").length > 0) {
+      document.querySelectorAll(".mode-switch input")[0].checked = checked;
+    }
+    document.body.classList.add(checked);
+  }
 });
 $(document).ready(function () {
   /***** tooltip *****/
@@ -322,5 +330,15 @@ function accordion(acc_head) {
     panel.style.maxHeight = null;
   } else {
     panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+}
+
+function modeSwitch(checkBox) {
+  if (checkBox.checked == true) {
+    document.body.classList.add("darkMode");
+    localStorage.setItem("mode", "darkMode");
+  } else {
+    document.body.classList.remove("darkMode");
+    localStorage.setItem("mode", "light");
   }
 }
