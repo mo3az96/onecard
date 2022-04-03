@@ -2505,6 +2505,12 @@ textarea.form-control {
   font-size: 20px;
   color: #b5b7b9;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .input-cont-icon .password-show input {
@@ -2528,6 +2534,12 @@ textarea.form-control {
   font-size: 20px;
   color: #b5b7b9;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .input-password .password-show input {
@@ -8965,7 +8977,7 @@ body.noHeader {
 
 .darkMode .header-cont {
   background-color: #3b3b3b;
-  border-color: #4d4d4e;
+  border-color: #4d4d4e !important;
 }
 
 .darkMode .header-nav {
@@ -9043,6 +9055,10 @@ body.noHeader {
   background-color: #333333;
 }
 
+.darkMode .download a:hover {
+  background-color: var(--primary-color);
+}
+
 .darkMode .last-footer {
   background-color: #333333;
 }
@@ -9078,6 +9094,7 @@ body.noHeader {
 .darkMode .secondary-btn:hover, .darkMode .secondary-btn:active {
   background-color: var(--secondery-color);
   color: #333;
+  border-color: var(--secondery-color);
 }
 
 .darkMode .default-btn {
@@ -9264,6 +9281,10 @@ body.noHeader {
 
 .darkMode .testimonial .more-text.active:hover i {
   color: #8c8c8c;
+}
+
+.darkMode .feature:before {
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
 }
 
 /*////////////////////// category //////////////////////*/
@@ -9813,5 +9834,26 @@ body.noHeader {
 
 .darkMode .giftsModal .modal-btn:hover {
   color: #333;
+}
+
+.darkMode .howToBuy-content h6 {
+  color: var(--text-color);
+}
+
+.darkMode .howToBuy-content ol {
+  color: var(--text-color);
+}
+
+.darkMode .infomation-content p {
+  color: var(--text-color);
+}
+
+.darkMode .information-accrdion .accordion-head {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.darkMode .information-accrdion .accordion-body {
+  background-color: #3b3b3b;
 }
 /*# sourceMappingURL=main.css.map */
