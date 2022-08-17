@@ -13510,7 +13510,7 @@ html[dir="ltr"] .input-group .country-key img {
 }
 @media (prefers-color-scheme: light) {
   body{
-    background-color: red;
+    background-color: red !important;
   }
 }
 @media (prefers-color-scheme: dark) {

@@ -8,6 +8,7 @@ $(window).on("load", function () {
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches;
   if (checked == "darkMode" || scheme) {
+    alert(scheme);
     if (document.querySelectorAll(".mode-switch input").length > 0) {
       document.querySelectorAll(".mode-switch input")[0].checked = checked;
     }
