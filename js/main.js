@@ -4,7 +4,10 @@ $(window).on("load", function () {
   });
 
   var checked = localStorage.getItem("mode");
-  if (checked == "darkMode") {
+  var scheme =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+  if (checked == "darkMode" || scheme) {
     if (document.querySelectorAll(".mode-switch input").length > 0) {
       document.querySelectorAll(".mode-switch input")[0].checked = checked;
     }
@@ -299,15 +302,11 @@ $(document).ready(function () {
     observeParents: true,
   });
 
-
-
   $(".edit-phone").click(function () {
     $(".edit-phone-form").slideToggle(300);
   });
 
-
   $(".mobily-title").click(function () {
-
     $(".mobily-cartpage").toggleClass("mobily-used");
     $(".mobily-coupon-list").slideToggle(300);
   });
