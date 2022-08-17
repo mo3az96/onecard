@@ -13508,7 +13508,11 @@ html[dir="ltr"] .input-group .country-key img {
 .total.mobily-total {
   color: #149ad7;
 }
-
+@media (prefers-color-scheme: light) {
+  body{
+    background-color: red;
+  }
+}
 @media (prefers-color-scheme: dark) {
   body {
     --secondery-color: #fff;
