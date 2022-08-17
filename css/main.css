@@ -10484,11 +10484,7 @@ body.noHeader {
 .darkMode .products-section + .products-section {
   background-color: #3b3b3b;
 }
-@media (prefers-color-scheme: dark) {
-    .products-section + .products-section {
-      background-color: red;
-    }
-}
+
 .darkMode .products-section + .products-section + .products-section {
   background-color: #333333;
 }
