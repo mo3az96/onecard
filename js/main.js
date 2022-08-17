@@ -298,6 +298,19 @@ $(document).ready(function () {
     observer: true,
     observeParents: true,
   });
+
+
+
+  $(".edit-phone").click(function () {
+    $(".edit-phone-form").slideToggle(300);
+  });
+
+
+  $(".mobily-title").click(function () {
+
+    $(".mobily-cartpage").toggleClass("mobily-used");
+    $(".mobily-coupon-list").slideToggle(300);
+  });
 });
 function showPass(showPass) {
   sibling = showPass.parentElement.nextElementSibling;

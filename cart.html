@@ -522,6 +522,86 @@
                   </div>
                 </div>
               </div>
+              <!-- /**~~~~~~~~~~~~~~~~~~~~~~~~~~~ New ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~**/ -->
+              <div class="mobily-cartpage">
+                <div class="mobily-title">
+                  <div class="icon">
+                    <img src="images/mobily.png" class="img-fluid" />
+                  </div>
+                  استخدم نقاط موبايلي للحصول على كوبون خصم
+                </div>
+                <div class="mobily-coupon-list">
+                  <div class="mobily-coupon-item">
+                    <div class="coupon-img">
+                      <img src="images/coupon/01.jpg" class="img-fluid" />
+                    </div>
+                    <h4 class="coupon-name">كوبون خصم بقيمة 5 ريال</h4>
+                    <button
+                      type="button"
+                      class="coupon-btn"
+                      data-toggle="modal"
+                      data-target="#couponNote"
+                    >
+                      استخدام
+                    </button>
+                  </div>
+                  <div class="mobily-coupon-item">
+                    <div class="coupon-img">
+                      <img src="images/coupon/01.jpg" class="img-fluid" />
+                    </div>
+                    <h4 class="coupon-name">كوبون خصم بقيمة 5 ريال</h4>
+                    <button
+                      type="button"
+                      class="coupon-btn"
+                      data-toggle="modal"
+                      data-target="#couponNote"
+                    >
+                      استخدام
+                    </button>
+                  </div>
+                  <div class="mobily-coupon-empty">
+                    <div class="empty-icon">
+                      <img src="images/coupon.png" class="img-fluid" />
+                    </div>
+                    <div class="empty-text">
+                      ليس لديك نقاط موبايلي كافية للحصول على كوبونات خصم نقاطي
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobily-cartpage mobily-used">
+                <div class="mobily-title">
+                  <div class="icon">
+                    <img src="images/mobily.png" class="img-fluid" />
+                  </div>
+                  استخدم نقاط موبايلي للحصول على كوبون خصم
+                </div>
+                <div class="mobily-coupon-list">
+                  <div class="mobily-coupon-successed">
+                    <div class="successed-icon">
+                     <i class="las la-check"></i>
+                    </div>
+                    <div class="successed-text">
+                      استمتع الآن بخصم 10 ريال من خلال كوبون نقاطي
+                    </div>
+                    <div class="successed-alert">
+                      وستفقد المتبقى من قيمة الكوبون 5 ريال
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /**~~~~~~~~~~~~~~~~~~~~~~~~~~~ New ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~**/ -->
+              <div class="form-group coupon-form">
+                <label>كوبون خصم (إن وجد)</label>
+                <div class="form-flex">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="ادخل رقم الكوبون"
+                  />
+                  <button class="coupon-btn disabled">تفعيل الكوبون</button>
+                </div>
+              </div>
               <div class="totals">
                 <div class="total">
                   <span class="title"> إجمالي الكمية </span>
@@ -530,7 +610,13 @@
                 <div class="total">
                   <span class="title"> إجمالي السعر </span>
                   <strong class="value">210.00 ريال</strong>
-                </div>
+                </div>              
+                <!-- /**~~~~~~~~~~~~~~~~~~~~~~~~~~~ New ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~**/ -->
+                <div class="total mobily-total">
+                  <span class="title"> خصم نقاطي </span>
+                  <strong class="value">10.00 ريال</strong>
+                </div>   
+                <!-- /**~~~~~~~~~~~~~~~~~~~~~~~~~~~ New ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~**/ -->       
                 <div class="total">
                   <span class="title"> إجمالي الضريبة </span>
                   <strong class="value">14.00 ريال</strong>
@@ -895,6 +981,119 @@
               ازالة البطاقة اﻵن
             </button>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal couponNote"
+      id="couponNote"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="las la-times"></i>
+          </button>
+          <h2 class="couponNote-title">استخدام كوبون</h2>
+          <p class="couponNote-text">
+            لقد اخترت كوبون خصم بقيمة اكبر من القيمة المطلوبة لإجمالي طلبك، تابع
+            التسوق لاضافة المزيد، او اختر كوبون خصم آخر
+          </p>
+          <div class="dashed-alert">
+            <i class="las la-info-circle"></i>
+            اذا تم استخدام هذا الكوبون ستفقد المبلغ الزائد عن الإجمالي المستحق
+          </div>
+
+          <button
+            type="button"
+            class="secondary-btn couponNote-continue"
+            data-dismiss="modal"
+          >
+            متابعة التسوق
+          </button>
+          <button
+            class="primary-btn couponNote-use"
+            type="button"
+            data-toggle="modal"
+            data-target="#couponCode"
+            data-dismiss="modal"
+          >
+            استخدم الكوبون
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal couponNote"
+      id="couponCode"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="las la-times"></i>
+          </button>
+          <h2 class="couponNote-title">تحقق من رقم الجوال</h2>
+          <p class="couponNote-text couponCode-text">
+            تم إرسال رمز التحقق إلى <strong>00966581000000</strong>
+            <br />
+            فضلا قم بإدخال رمز التحقق المكون من 4 ارقام
+          </p>
+          <form class="code-form">
+            <div class="inputs-numbers">
+              <input
+                type="number"
+                placeholder="0"
+                class="form-control code-input"
+              />
+              <input
+                type="number"
+                placeholder="0"
+                class="form-control code-input"
+                disabled
+              />
+              <input
+                type="number"
+                placeholder="0"
+                class="form-control code-input"
+                disabled
+              />
+              <input
+                type="number"
+                placeholder="0"
+                class="form-control code-input"
+                disabled
+              />
+            </div>
+            <button
+              type="submit"
+              class="primary-btn submit-btn disabled"
+              id="code-submit-btn"
+            >
+              ارسال
+            </button>
+          </form>
+          <p class="couponNote-text couponCode-text">
+            لم تصلك الرسالة؟ <a href="#!">إعادة إرسال رمز التحقق</a>
+          </p>
+          <p class="couponNote-text couponCode-text">
+            للحصول على المساعدة يمكنك الاتصال
+            <a href="contact.html">بخدمة العملاء</a>
+          </p>
         </div>
       </div>
     </div>
