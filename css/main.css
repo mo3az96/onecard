@@ -13517,7 +13517,7 @@ html[dir="ltr"] .input-group .country-key img {
   body {
     --secondery-color: #fff;
     --text-color: #d9d9d9;
-    background-color: #333333;
+    background-color: #333333 !important;
   }
   .products-small-slider .product .add-to-cart {
     color: #fff;
